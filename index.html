@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Ethically crafted winter accessories made for lasting warmth. Explore merino wool, cashmere, and thoughtful gifts from Velvet & Thread." />
+    <meta name="theme-color" content="#FDFBF7" />
+    <title>Velvet &amp; Thread — Luxury Winter Accessories</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement-bar">Complimentary express shipping on orders over $100 <span aria-hidden="true">•</span> Ethically crafted</div>
+
+    <header class="navbar">
+      <div class="nav-container">
+        <a class="brand-logo" href="#home" aria-label="Velvet and Thread home">Velvet &amp; Thread</a>
+        <nav class="nav-menu" aria-label="Main navigation">
+          <a href="#shop">Shop all</a>
+          <a href="#scarves">Scarves &amp; wraps</a>
+          <a href="#beanies">Beanies</a>
+          <a href="#gifts">Gifts</a>
+          <a href="#story">Our story</a>
+        </nav>
+        <div class="nav-actions" aria-label="Store tools">
+          <button class="nav-btn" id="open-search" type="button" aria-haspopup="dialog" aria-controls="search-modal">Search</button>
+          <button class="nav-btn" id="open-account" type="button" aria-haspopup="dialog" aria-controls="account-modal">Account</button>
+          <button class="cart-btn" id="open-cart" type="button" aria-haspopup="dialog" aria-controls="cart-drawer">Cart (<span id="cart-count">0</span>)</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero-section" aria-labelledby="hero-title">
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="hero-tag">New winter collection</p>
+          <h1 id="hero-title">Wrap Yourself in Sustainable Warmth</h1>
+          <p>Handcrafted cold-weather accessories made from ethically sourced merino wool and cashmere.</p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#shop">Shop the collection</a>
+            <a class="btn btn-secondary" href="#story">Our materials</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="value-props" aria-label="Our commitments">
+        <div class="container value-props-grid">
+          <article class="prop-item"><span class="prop-mark" aria-hidden="true">✳</span><h2>Ethically sourced</h2><p>100% cruelty-free merino wool and organic cashmere.</p></article>
+          <article class="prop-item"><span class="prop-mark" aria-hidden="true">↗</span><h2>Express shipping</h2><p>Complimentary carbon-neutral delivery on orders over $100.</p></article>
+          <article class="prop-item"><span class="prop-mark" aria-hidden="true">⌁</span><h2>Lifetime repair</h2><p>We mend and care for your pieces so they last for decades.</p></article>
+        </div>
+      </section>
+
+      <section class="products-section container" id="shop" aria-labelledby="products-title">
+        <header class="section-header">
+          <p class="section-kicker">Made for colder days</p>
+          <h2 id="products-title">Curated Winter Essentials</h2>
+          <p>Designed for timeless warmth and an effortless Scandinavian aesthetic.</p>
+          <p class="search-results" id="search-results" aria-live="polite"></p>
+        </header>
+        <div class="product-grid" id="product-grid">
+          <article class="product-card" data-search="alpine ribbed knit scarf organic merino wool scarves wraps">
+            <div class="product-image-box">
+              <span class="badge">Bestseller</span>
+              <img src="https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Soft neutral knit scarf in a winter wardrobe" loading="lazy" />
+              <button class="quick-add" type="button" data-name="The Alpine Ribbed Knit Scarf" data-price="120">Quick add · $120</button>
+            </div>
+            <div class="product-details">
+              <h3>The Alpine Ribbed Knit Scarf</h3><p class="product-subtitle">100% organic merino wool</p><p class="product-price">$120.00</p>
+              <div class="swatches" aria-label="Available colors"><span class="swatch swatch-oat" title="Oat"></span><span class="swatch swatch-moss" title="Moss"></span><span class="swatch swatch-cocoa" title="Cocoa"></span></div>
+            </div>
+          </article>
+          <article class="product-card" data-search="nordic cashmere beanie recycled cashmere blend beanies">
+            <div class="product-image-box">
+              <img src="https://images.unsplash.com/photo-1576871337622-98d48d1cf531?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Warm wool beanie in a soft neutral shade" loading="lazy" />
+              <button class="quick-add" type="button" data-name="Nordic Cashmere Beanie" data-price="85">Quick add · $85</button>
+            </div>
+            <div class="product-details">
+              <h3>Nordic Cashmere Beanie</h3><p class="product-subtitle">Recycled cashmere blend</p><p class="product-price">$85.00</p>
+              <div class="swatches" aria-label="Available colors"><span class="swatch swatch-stone" title="Stone"></span><span class="swatch swatch-rose" title="Rose"></span><span class="swatch swatch-forest" title="Forest"></span></div>
+            </div>
+          </article>
+          <article class="product-card" data-search="plush fleece lined mittens water resistant wool blend gifts">
+            <div class="product-image-box">
+              <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Cozy winter accessories in muted natural colors" loading="lazy" />
+              <button class="quick-add" type="button" data-name="Plush Fleece Lined Mittens" data-price="65">Quick add · $65</button>
+            </div>
+            <div class="product-details">
+              <h3>Plush Fleece Lined Mittens</h3><p class="product-subtitle">Water-resistant wool blend</p><p class="product-price">$65.00</p>
+              <div class="swatches" aria-label="Available colors"><span class="swatch swatch-sand" title="Sand"></span><span class="swatch swatch-rust" title="Rust"></span><span class="swatch swatch-pine" title="Pine"></span></div>
+            </div>
+          </article>
+          <article class="product-card" data-search="hearth oversized wrap ultra soft alpaca fibre scarves wraps gifts">
+            <div class="product-image-box">
+              <span class="badge">New</span>
+              <img src="https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Textured oversized wrap folded in a warm neutral palette" loading="lazy" />
+              <button class="quick-add" type="button" data-name="Hearth Oversized Wrap" data-price="160">Quick add · $160</button>
+            </div>
+            <div class="product-details">
+              <h3>Hearth Oversized Wrap</h3><p class="product-subtitle">Ultra-soft alpaca fibre</p><p class="product-price">$160.00</p>
+              <div class="swatches" aria-label="Available colors"><span class="swatch swatch-cream" title="Cream"></span><span class="swatch swatch-blush" title="Blush"></span><span class="swatch swatch-slate" title="Slate"></span></div>
+            </div>
+          </article>
+        </div>
+        <p class="no-results" id="no-results" hidden>No pieces match that search. Try “scarf”, “beanie”, or “mittens”.</p>
+      </section>
+
+      <section class="feature-banner" id="scarves" aria-labelledby="scarves-title">
+        <div class="container feature-grid">
+          <div class="feature-img"><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Winter styling in warm, natural layers" loading="lazy" /></div>
+          <div class="feature-text"><p class="section-kicker">The art of layering</p><h2 id="scarves-title">A softer kind of statement.</h2><p>Discover scarves and wraps in tactile natural fibres, made to travel with you through the whole season.</p><a class="text-link" href="#shop">Shop scarves &amp; wraps <span aria-hidden="true">→</span></a></div>
+        </div>
+      </section>
+
+      <section class="feature-banner feature-reverse" id="beanies" aria-labelledby="beanies-title">
+        <div class="container feature-grid">
+          <div class="feature-img"><img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="A relaxed cold-weather look in soft neutral tones" loading="lazy" /></div>
+          <div class="feature-text"><p class="section-kicker">Warmth, made simple</p><h2 id="beanies-title">Your everyday winter essential.</h2><p>Soft cashmere blends, thoughtful details, and easy shapes that feel right from the first frost.</p><a class="text-link" href="#shop">Explore beanies <span aria-hidden="true">→</span></a></div>
+        </div>
+      </section>
+
+      <section class="gifts-band" id="gifts" aria-labelledby="gifts-title">
+        <div class="container gifts-content">
+          <p class="section-kicker">A little warmth to give</p>
+          <h2 id="gifts-title">Thoughtful gifts, beautifully kept.</h2>
+          <p>Small comforts for the people who make every season feel warmer.</p>
+          <a class="btn btn-primary" href="#shop">Shop gifts</a>
+        </div>
+      </section>
+
+      <section class="story-band" id="story" aria-labelledby="story-title">
+        <div class="container story-content">
+          <p class="section-kicker">Considered from fibre to finish</p>
+          <h2 id="story-title">Good warmth feels good in every way.</h2>
+          <p>We choose traceable natural fibres, work with responsible makers, and stand behind every piece we make.</p>
+          <a class="text-link" href="#story">Discover our materials <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content"><p>© 2026 Velvet &amp; Thread. All rights reserved.</p><p>Crafted with care for cold days.</p></div>
+    </footer>
+
+    <div class="overlay" id="page-overlay" aria-hidden="true"></div>
+
+    <aside class="drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-hidden="true" inert>
+      <div class="drawer-header"><h2 id="cart-title">Your bag <span>(<span id="drawer-count">0</span>)</span></h2><button class="close-btn" id="close-cart" type="button" aria-label="Close cart">×</button></div>
+      <div class="drawer-body"><p class="empty-cart" id="empty-cart">Your bag is currently empty.</p><div class="cart-list" id="cart-list"></div></div>
+      <div class="drawer-footer"><p class="subtotal"><span>Subtotal</span><span id="cart-total">$0.00</span></p><p class="checkout-note" id="checkout-note" aria-live="polite">Shipping and taxes calculated at checkout.</p><button class="btn btn-primary checkout-btn" id="checkout-btn" type="button" disabled>Checkout</button></div>
+    </aside>
+
+    <section class="modal" id="search-modal" role="dialog" aria-modal="true" aria-labelledby="search-title" aria-hidden="true" inert>
+      <div class="modal-box"><button class="close-btn modal-close" id="close-search" type="button" aria-label="Close search">×</button><p class="section-kicker">Find your winter essential</p><h2 id="search-title">Search the collection</h2><label class="visually-hidden" for="search-input">Search products</label><input class="search-input" id="search-input" type="search" placeholder="Try scarf, beanie, or mittens" autocomplete="off" /><p class="modal-hint">Results update as you type.</p></div>
+    </section>
+
+    <section class="modal" id="account-modal" role="dialog" aria-modal="true" aria-labelledby="account-title" aria-hidden="true" inert>
+      <div class="modal-box"><button class="close-btn modal-close" id="close-account" type="button" aria-label="Close account panel">×</button><p class="section-kicker">Welcome back</p><h2 id="account-title">Your account</h2><p>Sign-in is a preview in this storefront demo; no account details are sent or stored.</p><form id="account-form"><label for="account-email">Email address</label><input class="input-field" id="account-email" type="email" autocomplete="email" placeholder="you@example.com" required /><button class="btn btn-primary account-submit" type="submit">Continue</button></form><p class="form-status" id="account-status" aria-live="polite"></p></div>
+    </section>
+
+    <div class="visually-hidden" id="cart-announcement" aria-live="polite" aria-atomic="true"></div>
+  </body>
+</html>
